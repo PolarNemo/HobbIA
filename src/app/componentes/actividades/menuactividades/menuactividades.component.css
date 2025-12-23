@@ -1,0 +1,20 @@
+:root {
+      --bs-primary: #0d6efd;
+    }
+    body {
+      background-color: #f8f9fa;
+    }
+    .card-counter {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+    }
+    .card-counter h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .w-100-peepo{
+      width: 100%;
+    }

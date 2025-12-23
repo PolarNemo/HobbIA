@@ -1,0 +1,141 @@
+
+    <main class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h1 class="h4 mb-0">Crear actividad</h1>
+            </div>
+            <div class="card-body">
+              <form class="needs-validation" novalidate>
+                <!-- Identificación -->
+                <div class="row g-3">
+                  <div class="col-sm-4">
+                    <label for="codigo" class="form-label required">Código</label>
+                    <input type="text" class="form-control" id="codigo" placeholder="ACT-001" required />
+                    <div class="invalid-feedback">El código es obligatorio.</div>
+                  </div>
+                  <div class="col-sm-8">
+                    <label for="nombre" class="form-label required">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre de la actividad" required />
+                    <div class="invalid-feedback">El nombre es obligatorio.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="descripcion" class="form-label required">Descripción</label>
+                    <textarea class="form-control" id="descripcion" rows="3" placeholder="Describe la actividad" required></textarea>
+                    <div class="invalid-feedback">La descripción es obligatoria.</div>
+                  </div>
+                </div>
+
+                <!-- Configuración -->
+                <div class="row mt-2 g-3">
+                  <div class="col-md-4">
+                    <label for="dificultad" class="form-label required">Nivel de dificultad</label>
+                    <select class="form-select" id="dificultad" required>
+                      <option value="" selected disabled>Selecciona un nivel</option>
+                      <option>Muy fácil</option>
+                      <option>Fácil</option>
+                      <option>Intermedio</option>
+                      <option>Difícil</option>
+                      <option>Muy difícil</option>
+                    </select>
+                    <div class="invalid-feedback">Selecciona un nivel de dificultad.</div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="duracion" class="form-label">Duración estimada (min)</label>
+                    <input type="number" class="form-control" id="duracion" min="1" step="1" placeholder="60" />
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="edad" class="form-label">Edad recomendada</label>
+                    <input type="text" class="form-control" id="edad" placeholder="Ej. 8–12 años, adultos" />
+                  </div>
+
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- Personalidad afín -->
+                <div class="mb-3">
+                  <span class="form-label d-block required">Tipo de personalidad afín</span>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Extrovertida" id="p1" required />
+                        <label class="form-check-label" for="p1">Extrovertida</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Introvertida" id="p2" />
+                        <label class="form-check-label" for="p2">Introvertida</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Analítica" id="p3" />
+                        <label class="form-check-label" for="p3">Analítica</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Creativa" id="p4" />
+                        <label class="form-check-label" for="p4">Creativa</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Colaborativa" id="p5" />
+                        <label class="form-check-label" for="p5">Colaborativa</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Líder" id="p6" />
+                        <label class="form-check-label" for="p6">Líder</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-text">Selecciona al menos una opción.</div>
+                  <div class="invalid-feedback d-block" id="personalityFeedback" style="display:none;">Selecciona al menos una personalidad.</div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- Recursos y logística -->
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="objetivos" class="form-label">Objetivos</label>
+                    <textarea class="form-control" id="objetivos" rows="2" placeholder="Qué se busca lograr"></textarea>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="materiales" class="form-label">Materiales</label>
+                    <textarea class="form-control" id="materiales" rows="2" placeholder="Lista de materiales necesarios"></textarea>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="costo" class="form-label">Costo estimado Minimo (S/)</label>
+                    <input type="number" class="form-control" id="costo" min="0" step="0.01" placeholder="0.00" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="costo" class="form-label">Costo estimado Maximo(S/)</label>
+                    <input type="number" class="form-control" id="costoMax" min="0" step="0.01" placeholder="0.00" />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="etiquetas" class="form-label">Etiquetas</label>
+                    <input type="text" class="form-control" id="etiquetas" placeholder="Ej. juego, equipo, aire libre" />
+                    <div class="form-text">Separadas por comas.</div>
+                  </div>
+                </div>
+
+                <hr class="my-4"/>
+
+                <!-- Controles -->
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-primary">Guardar actividad</button>
+                  <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <p class="text-muted mt-3 mb-0">
+            Los campos marcados con * son obligatorios.
+          </p>
+        </div>
+      </div>
+    </main>

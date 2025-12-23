@@ -1,0 +1,61 @@
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white">
+      <h3 class="mb-0">Cuestionario de Personalidad</h3>
+    </div>
+    <div class="card-body">
+        <!-- Pregunta 1 -->
+        <div class="mb-3">
+          <label class="form-label">1. ¿Prefieres trabajar en equipo o de manera individual?</label>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="equipo" id="equipo1" value="equipo">
+              <label class="form-check-label" for="equipo1">En equipo</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="equipo" id="equipo2" value="individual">
+              <label class="form-check-label" for="equipo2">De manera individual</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="mb-3">
+          <label class="form-label">2. ¿Cómo reaccionas ante situaciones de presión?</label>
+          <select class="form-select" name="presion">
+            <option selected disabled>Selecciona una opción...</option>
+            <option value="calma">Mantengo la calma</option>
+            <option value="estres">Me estreso fácilmente</option>
+            <option value="buscoayuda">Busco ayuda de otros</option>
+          </select>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="mb-3">
+          <label class="form-label">3. Describe brevemente cómo te consideras en tu vida diaria:</label>
+          <textarea class="form-control" rows="3" name="descripcion" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="mb-3">
+          <label class="form-label">4. ¿Qué valor consideras más importante?</label>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="valor" id="valor1" value="honestidad">
+              <label class="form-check-label" for="valor1">Honestidad</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="valor" id="valor2" value="respeto">
+              <label class="form-check-label" for="valor2">Respeto</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="valor" id="valor3" value="responsabilidad">
+              <label class="form-check-label" for="valor3">Responsabilidad</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón enviar -->
+        <div class="d-grid">
+        </div>
+    </div>
+  </div>

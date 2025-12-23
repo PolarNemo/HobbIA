@@ -1,0 +1,151 @@
+<div class="row">
+  <div class="col-12 mb-4">
+    <h2>Nuevo Cuestionario</h2>
+  </div>
+  <div class="col-12 mb-2">
+    <h4>Añadir pregunta</h4>
+  </div>
+  <div class="col-6 mb-2">
+    <div class="row">
+      <div class="col-12">
+        Ingrese el texto de la pregunta
+      </div>
+      <div class="col-12 mt-2">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        Ingrese las Opciones
+      </div>
+      <div class="col-9 mt-2">
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-3 mt-2 text-center">
+        <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <button class="btn btn-outline-success w-100">Crear Cuestionario</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 mb-2">
+    <div class="row">
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>
+                  Texto Pregunta
+                </th>
+                <th>
+                  Opciones Elegibles
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>¿Prefieres trabajar en equipo o de manera individual?</td>
+                <td>
+                  <span class="bg-info badge m-1">En Equipo</span>
+                  <br>
+                  <span class="bg-info badge">De Manera Individual</span>
+                </td>
+              </tr>
+              <tr>
+                <td>¿Cómo reaccionas ante situaciones de presión?</td>
+                <td>
+                  <span class="bg-info badge m-1">Mantengo la calma</span>
+                  <br>
+                  <span class="bg-info badge">Me estreso facilmente</span>
+                  <br>
+                  <span class="bg-info badge">Busco ayuda en otros</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Describa brevemente como te consideras en tu vida diaria:</td>
+                <td>
+              </tr>
+              <tr>
+                <td>¿Qué valor consideras más importante?</td>
+                <td>
+                  <span class="bg-info badge m-1">Honestidad</span>
+                  <br>
+                  <span class="bg-info badge">Respeto</span>
+                  <br>
+                  <span class="bg-info badge">Responsabilidad</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow">
+    <div class="card-header bg-primary text-white">
+      <h3 class="mb-0">Cuestionario de Personalidad</h3>
+    </div>
+    <div class="card-body">
+        <!-- Pregunta 1 -->
+        <div class="mb-3">
+          <label class="form-label">1. ¿Prefieres trabajar en equipo o de manera individual?</label>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="equipo" id="equipo1" value="equipo">
+              <label class="form-check-label" for="equipo1">En equipo</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="equipo" id="equipo2" value="individual">
+              <label class="form-check-label" for="equipo2">De manera individual</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="mb-3">
+          <label class="form-label">2. ¿Cómo reaccionas ante situaciones de presión?</label>
+          <select class="form-select" name="presion">
+            <option selected disabled>Selecciona una opción...</option>
+            <option value="calma">Mantengo la calma</option>
+            <option value="estres">Me estreso fácilmente</option>
+            <option value="buscoayuda">Busco ayuda de otros</option>
+          </select>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="mb-3">
+          <label class="form-label">3. Describe brevemente cómo te consideras en tu vida diaria:</label>
+          <textarea class="form-control" rows="3" name="descripcion" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="mb-3">
+          <label class="form-label">4. ¿Qué valor consideras más importante?</label>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="valor" id="valor1" value="honestidad">
+              <label class="form-check-label" for="valor1">Honestidad</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="valor" id="valor2" value="respeto">
+              <label class="form-check-label" for="valor2">Respeto</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="valor" id="valor3" value="responsabilidad">
+              <label class="form-check-label" for="valor3">Responsabilidad</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón enviar -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-success">Enviar respuestas</button>
+        </div>
+    </div>
+  </div>

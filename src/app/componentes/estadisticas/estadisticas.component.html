@@ -1,0 +1,150 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="height: 8%;">
+  <div class="container-fluid">
+    <button class="btn btn-transparent navbar-brand" (click)="IrAMenuPrincipal()"><b>HobbIA</b></button>
+    <button class="navbar-toggler" type="button" (click)="IrAMenuPrincipal()" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Opción Inicio -->
+        <li class="nav-item">
+          <button class="nav-link" aria-current="page" (click)="IAMenuEstadisticas()">Dashboard Estadisticas</button>
+        </li>
+      </ul>
+      <!-- Botón de cerrar sesión -->
+      <form class="d-flex">
+        <button class="btn btn-outline-light" type="button" (click)="CerrarSesion()">Cerrar sesión</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Contenido principal -->
+<div class="container-fluid" style="height: 86%; overflow-y: auto;">
+  <h1 class="text-center mb-4 mt-4">Estadisticas Generales</h1>
+
+    <!-- Tabla comparativa -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">Porcentaje de Evaluaciones Completadas</div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Evaluaciones Completas (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Evaluaciones completadas completamente</td>
+              <td>65%</td>
+            </tr>
+            <tr>
+              <td>Evaluaciones dejadas a la mitad</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>Evaluaciones no revisadas o dejadas sin completar</td>
+              <td>23%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Barras de progreso -->
+     <div class="row">
+      <div class="col-6">
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">Distribución de Rasgos Dominantes</div>
+      <div class="card-body">
+        <p>Extrovertidos</p>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-danger" style="width:30%">30%</div>
+        </div>
+        <p>Creatividad</p>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-warning" style="width:25%">25%</div>
+        </div>
+        <p>Introvertidos</p>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-info" style="width:20%">20%</div>
+        </div>
+        <p>Empatícos y Sociales</p>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:25%">25%</div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="col-6">
+
+    <!-- Gráfico circular de ciudades -->
+     <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-info text-white">Ciudades con más participantes</div>
+      <div class="card-body text-center">
+        <div class="pie-chart"></div>
+        <ul class="list-group list-group-flush mt-3">
+          <li class="list-group-item"><span class="badge bg-primary">■</span> Lima – 40%</li>
+          <li class="list-group-item"><span class="badge bg-success">■</span> Cusco – 30%</li>
+          <li class="list-group-item"><span class="badge bg-warning text-dark">■</span> Arequipa – 20%</li>
+          <li class="list-group-item"><span class="badge bg-danger">■</span> Trujillo – 10%</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+     </div>
+
+
+    <!-- Otra tabla estilo radar -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">Perfil de Personalidad</div>
+      <div class="card-body">
+        <table class="table table-bordered text-center">
+          <thead class="table-light">
+            <tr>
+              <th>Rasgo</th>
+              <th>Constentamente Activos</th>
+              <th>Regularmente Activos</th>
+              <th>Transitorios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Extrovertidos</td>
+              <td>70</td>
+              <td>50</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Cratividad</td>
+              <td>60</td>
+              <td>75</td>
+              <td>55</td>
+            </tr>
+            <tr>
+              <td>Introversión</td>
+              <td>65</td>
+              <td>45</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Empatia y Social</td>
+              <td>80</td>
+              <td>60</td>
+              <td>70</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+
+
+<footer class="bg-dark text-white py-3" style="bottom: 0;height: 6%;">
+<div class="container text-center">
+<p>© 2025 Company, Inc. All rights reserved.</p>
+</div>
+</footer>

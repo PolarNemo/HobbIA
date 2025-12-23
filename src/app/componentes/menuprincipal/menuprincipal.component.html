@@ -1,0 +1,142 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="height: 8%;">
+  <div class="container-fluid">
+    <button class="btn btn-transparent navbar-brand" routerLink="/menuprincipal">
+      <b>HobbIA</b>
+    </button>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuPrincipal"
+      aria-controls="menuPrincipal"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Opción Inicio -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/menuprincipal">Inicio</a>
+        </li>
+        <!-- Opción Estadisticas -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/estadisticas">Estadisticas</a>
+        </li>
+        <!-- Opción Exámenes -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/actividades">Actividades</a>
+        </li>
+        <!-- Opción Exámenes -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/examenes">Exámenes</a>
+        </li>
+        <!-- Opción Perfil -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/perfil">Perfil</a>
+        </li>
+      </ul>
+      <!-- Botón de cerrar sesión -->
+      <form class="d-flex">
+        <button class="btn btn-outline-light" type="button" (click)="CerrarSesion()">
+          Cerrar sesión
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" style="height: 84%;overflow-y: auto;">
+  <div class="row mt-5">
+    <div class="col-12">
+      <h4 class="text-black mb-4 text-center">Sumario de Evaluaciones Realizadas</h4>
+    </div>
+  </div>
+  <div class="row">
+     <div class="col"></div>
+    <div class="col-md-3">
+      <div class="card text-center" style="height: 225px;">
+        <div class="card-header bg-primary text-white">Usuarios Registrados</div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Total: <strong>1,000</strong></p>
+          <p>Distribución por género: 60% mujeres, 40% hombres</p>
+          <p>Edad promedio: 32 años</p>
+        </div>
+      </div>
+    </div>
+     <div class="col"></div>
+    <div class="col-md-3">
+      <div class="card text-center" style="height: 225px;">
+        <div class="card-header bg-success text-white">Estadísticas Promedio</div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p>Total completados: <strong>3,450</strong></p>
+          <p>Activos: 80 | Cerrados: 12</p>
+          <p>Tasa de finalización: 87%</p>
+        </div>
+      </div>
+    </div>
+     <div class="col"></div>
+    <div class="col-md-3">
+      <div class="card text-center" style="height: 225px;">
+        <div class="card-header bg-info text-white">Participación por Zonas</div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p><b>TOP 1</b>: Lima con 1,200 participaciones</p>
+          <p><b>TOP 2</b>: Arequipa con 800 participaciones</p>
+          <p>Satisfacción promedio: 4.2/5</p>
+        </div>
+      </div>
+    </div>
+     <div class="col"></div>
+  </div>
+  <div class="row mt-5">
+  <div class="col"></div>
+  <div class="col-8">
+  <h4 class="text-black mb-4 text-center">Tabla de Formulario en General</h4>
+    <div class="table-responsive" style="height: 500px;">
+      <table class="table table-bordered table-custom text-center align-middle">
+        <thead>
+          <tr>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>Fecha Creacion</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><b>f0001</b></td>
+              <td>Formulario de Actividades Fisicas</td>
+              <td>2025/11/23</td>
+            </tr>
+            <tr>
+              <td><b>f0002</b></td>
+              <td>Formulario de Actividades Psicologicas</td>
+              <td>2025/11/23</td>
+            </tr>
+            <tr>
+              <td><b>f0003</b></td>
+              <td>Formulario de Actividades Estretegicas</td>
+              <td>2025/11/23</td>
+            </tr>
+            <tr>
+              <td><b>f0004</b></td>
+              <td>Formulario de Pensamiento Intuitivo</td>
+              <td>2025/11/23</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col"></div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white py-3" style="bottom: 0;height: 8%;">
+<div class="container text-center">
+<p>© 2025 Company, Inc. All rights reserved.</p>
+</div>
+</footer>

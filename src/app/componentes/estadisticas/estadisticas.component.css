@@ -1,0 +1,13 @@
+.pie-chart {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #007bff 0% 40%,   /* Lima 40% */
+        #28a745 40% 70%, /* Cusco 30% */
+        #ffc107 70% 90%, /* Arequipa 20% */
+        #dc3545 90% 100% /* Trujillo 10% */
+      );
+
+      margin: auto;
+    }

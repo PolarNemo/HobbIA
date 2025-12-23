@@ -1,0 +1,29 @@
+
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100" [style.background-image] = "'url('+imagebackground+')'">
+<div class="card p-4 shadow" style="width: 22rem;">
+<h4 class="text-center mb-4">Hobb<b>IA</b></h4>
+<form>
+<div class="mb-3">
+<label for="usuario" class="form-label" style="color: rgb(21, 47, 161);"><b>Usuario</b></label>
+<input type="text" class="form-control" id="usuario" placeholder="Ingrese su Usuario">
+</div>
+<div class="mb-3">
+<label for="password" class="form-label" style="color: rgb(21, 47, 161);"><b>Contrasena</b></label>
+<input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+</div>
+<div class="mb-3 form-check" >
+<input type="checkbox" class="form-check-input" id="rememberMe">
+<label class="form-check-label" for="rememberMe">Mantenerme la Sesión</label>
+</div>
+<button type="button" (click)="IngresarAHobbIA()" class="btn btn-primary w-100">Ingresar</button>
+</form>
+<br/>
+<p class="text-center mt-3">
+<a routerLink="/olvidarcontrasena">Olvidaste tu contraseña? Clickeame</a>
+<br/>
+<br/>
+<a routerLink="/registrarse">Eres nuevo? Registrate</a>
+</p>
+</div>
+</div>
+
