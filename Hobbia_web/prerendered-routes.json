@@ -1,0 +1,23 @@
+{
+  "routes": {
+    "/": {},
+    "/actividades": {},
+    "/actividades/editar": {},
+    "/actividades/menu": {},
+    "/actividades/nuevo": {},
+    "/actividades/relacionar": {},
+    "/estadisticas": {},
+    "/examenes": {},
+    "/examenes/editarcuestionario": {},
+    "/examenes/menu": {},
+    "/examenes/nuevocuestionario": {},
+    "/examenes/realizarcuestionario": {},
+    "/login": {},
+    "/menuprincipal": {},
+    "/olvidarcontrasena": {},
+    "/perfil": {},
+    "/perfil/modificarperfil": {},
+    "/perfil/ver": {},
+    "/registrarse": {}
+  }
+}
