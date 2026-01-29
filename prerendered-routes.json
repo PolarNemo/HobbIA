@@ -1,0 +1,27 @@
+{
+  "routes": {
+    "/HobbIA": {},
+    "/HobbIA/actividades": {},
+    "/HobbIA/actividades/editar": {},
+    "/HobbIA/actividades/menu": {},
+    "/HobbIA/actividades/nuevo": {},
+    "/HobbIA/actividades/relacionar": {},
+    "/HobbIA/estadisticas": {},
+    "/HobbIA/examenes": {},
+    "/HobbIA/examenes/editarcuestionario": {},
+    "/HobbIA/examenes/menu": {},
+    "/HobbIA/examenes/nuevocuestionario": {},
+    "/HobbIA/examenes/realizarcuestionario": {},
+    "/HobbIA/login": {},
+    "/HobbIA/menuprincipal": {},
+    "/HobbIA/olvidarcontrasena": {},
+    "/HobbIA/perfil": {},
+    "/HobbIA/perfil/modificarperfil": {},
+    "/HobbIA/perfil/ver": {},
+    "/HobbIA/proveedor": {},
+    "/HobbIA/proveedor/gestionar": {},
+    "/HobbIA/proveedor/menu": {},
+    "/HobbIA/proveedor/nuevo": {},
+    "/HobbIA/registrarse": {}
+  }
+}
