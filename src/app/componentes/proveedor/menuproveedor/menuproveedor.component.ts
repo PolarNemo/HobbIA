@@ -4,11 +4,11 @@ import { ActividadService } from "../../../service/ActividadService/actividad.se
 import { Actividad } from "../../../interfaces/usuario/actividad.interface";
 
 @Component({
-	selector: "app-menuactividades",
-	templateUrl: "./menuactividades.component.html",
-	styleUrls: ["./menuactividades.component.css"]
+	selector: "app-menuproveedor",
+	templateUrl: "./menuproveedor.component.html",
+	styleUrls: ["./menuproveedor.component.css"]
 })
-export class MenuActividadesComponent implements OnInit {
+export class MenuProveedorComponent implements OnInit {
 
   private readonly _actividadService = inject(ActividadService);
   private readonly _router = inject(Router);

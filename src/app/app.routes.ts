@@ -17,6 +17,10 @@ import { MenuActividadesComponent } from './componentes/actividades/menuactivida
 import { EditarActividadesComponent } from './componentes/actividades/editaractividades/editaractividades.component';
 import { NuevoActividadesComponent } from './componentes/actividades/nuevoactividades/nuevoactividades.component';
 import { RelacionarActividadesComponent } from './componentes/actividades/relacionaractividades/relacionaractividades.component';
+import { ProveedorComponent } from './componentes/proveedor/proveedor.component';
+import { MenuProveedorComponent } from './componentes/proveedor/menuproveedor/menuproveedor.component';
+import { GestionarProveedorComponent } from './componentes/proveedor/gestionarproveedor/gestionarproveedor.component';
+import { NuevoProveedorComponent } from './componentes/proveedor/nuevoproveedor/nuevoproveedor.component';
 
 export const routes: Routes = [
   { path: 'actividades', component: ActividadesComponent, children: [
@@ -26,6 +30,13 @@ export const routes: Routes = [
     { path: 'relacionar', component: RelacionarActividadesComponent },
     { path: '', redirectTo: '/actividades/menu', pathMatch: 'full' },
     { path: '**', redirectTo: '/actividades/menu' }
+  ]},
+  { path: 'proveedor', component: ProveedorComponent, children: [
+    { path: 'menu', component: MenuProveedorComponent },
+    { path: 'gestionar', component: GestionarProveedorComponent },
+    { path: 'nuevo', component: NuevoProveedorComponent },
+    { path: '', redirectTo: '/proveedor/menu', pathMatch: 'full' },
+    { path: '**', redirectTo: '/proveedor/menu' }
   ]},
   { path: 'examenes', component: ExamenesComponent, children: [
     { path: 'menu', component: MenuCuestionarioComponent },

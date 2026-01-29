@@ -1,0 +1,602 @@
+<header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21h18"></path>
+                        <path d="M9 8h1"></path>
+                        <path d="M9 12h1"></path>
+                        <path d="M9 16h1"></path>
+                        <path d="M14 8h1"></path>
+                        <path d="M14 12h1"></path>
+                        <path d="M14 16h1"></path>
+                        <path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"></path>
+                    </svg>
+                    <div>
+                        <h1 class="header-title">SuministrosTechies SA</h1>
+                        <p class="header-subtitle">Panel de Control del Proveedor</p>
+                    </div>
+                </div>
+                <div class="provider-status">
+                    <span class="status-badge status-premium">Premium</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Estado General y Estadísticas Principales -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span class="stat-label">Visualizaciones</span>
+                    </div>
+                    <p class="stat-value">24,567</p>
+                    <p class="stat-change positive">+12.5% vs mes anterior</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="stat-label">Compras Realizadas</span>
+                    </div>
+                    <p class="stat-value">1,847</p>
+                    <p class="stat-change positive">+8.3% vs mes anterior</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                            <path d="M12 22V12"></path>
+                        </svg>
+                        <span class="stat-label">Productos Activos</span>
+                    </div>
+                    <p class="stat-value">145</p>
+                    <p class="stat-change neutral">Sin cambios</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="stat-label">Tiendas Registradas</span>
+                    </div>
+                    <p class="stat-value">8</p>
+                    <p class="stat-change positive">+2 nuevas</p>
+                </div>
+            </div>
+
+            <!-- Tabla de Productos y Direcciones -->
+            <div class="two-column-layout">
+                <!-- Productos -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Mis Productos</h2>
+                        <button class="icon-btn" onclick="openProductModal()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Stock</th>
+                                    <th>Ventas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product-cell">
+                                            <div class="product-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                                </svg>
+                                            </div>
+                                            <span>Placas Arduino</span>
+                                        </div>
+                                    </td>
+                                    <td>$29.99</td>
+                                    <td><span class="stock-badge stock-high">850</span></td>
+                                    <td><span class="sales-value">423</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cell">
+                                            <div class="product-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8"></path>
+                                                    <path d="m16 16 6-6"></path>
+                                                    <path d="m8 8 6-6"></path>
+                                                    <path d="m9 7 8 8"></path>
+                                                    <path d="m21 11-8-8"></path>
+                                                </svg>
+                                            </div>
+                                            <span>Papel Electroconductible</span>
+                                        </div>
+                                    </td>
+                                    <td>$12.50</td>
+                                    <td><span class="stock-badge stock-medium">234</span></td>
+                                    <td><span class="sales-value">387</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cell">
+                                            <div class="product-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <circle cx="12" cy="12" r="4"></circle>
+                                                    <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                                                    <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                                                    <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                                                    <line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line>
+                                                    <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+                                                </svg>
+                                            </div>
+                                            <span>Chips Bluetooth</span>
+                                        </div>
+                                    </td>
+                                    <td>$18.75</td>
+                                    <td><span class="stock-badge stock-low">45</span></td>
+                                    <td><span class="sales-value">312</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cell">
+                                            <div class="product-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                                                    <path d="M12 18V6"></path>
+                                                </svg>
+                                            </div>
+                                            <span>Recibidor de Dinero Automatizado</span>
+                                        </div>
+                                    </td>
+                                    <td>$45.00</td>
+                                    <td><span class="stock-badge stock-high">567</span></td>
+                                    <td><span class="sales-value">289</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cell">
+                                            <div class="product-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                                </svg>
+                                            </div>
+                                            <span>Placas de Automatizadores</span>
+                                        </div>
+                                    </td>
+                                    <td>$89.99</td>
+                                    <td><span class="stock-badge stock-medium">156</span></td>
+                                    <td><span class="sales-value">201</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Direcciones -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Mis Tiendas</h2>
+                        <button class="icon-btn" onclick="openStoreModal()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="stores-list">
+                        <div class="store-item">
+                            <div class="store-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="store-info">
+                                <h3 class="store-name">Sede Principal</h3>
+                                <p class="store-address">Calle Abancay, Lima</p>
+                                <span class="store-badge">Principal</span>
+                            </div>
+                        </div>
+
+                        <div class="store-item">
+                            <div class="store-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="store-info">
+                                <h3 class="store-name">Sucursal Minorista</h3>
+                                <p class="store-address">Paseo Colon Cercado de Lima, Lima</p>
+                            </div>
+                        </div>
+
+                        <div class="store-item">
+                            <div class="store-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="store-info">
+                                <h3 class="store-name">Sucursal Mayorista</h3>
+                                <p class="store-address">Plaza Central, Trujillo</p>
+                            </div>
+                        </div>
+
+                        <div class="store-item">
+                            <div class="store-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="store-info">
+                                <h3 class="store-name">Almacén</h3>
+                                <p class="store-address">Pentagonito, Surco</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos Más Vendidos y Ranking de Hobbies -->
+            <div class="two-column-layout">
+                <!-- Productos Más Vendidos -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Productos Más Vendidos</h2>
+                        <select class="period-select">
+                            <option>Últimos 30 días</option>
+                            <option>Últimos 7 días</option>
+                            <option>Último año</option>
+                        </select>
+                    </div>
+                    <div class="ranking-list">
+                        <div class="ranking-item">
+                            <div class="rank-number rank-1">1</div>
+                            <div class="ranking-info">
+                                <h4>Transistores</h4>
+                                <p class="ranking-detail">723 ventas · $12,687.77</p>
+                            </div>
+                            <div class="ranking-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <div class="rank-number rank-2">2</div>
+                            <div class="ranking-info">
+                                <h4>Placas de Automatizadores</h4>
+                                <p class="ranking-detail">387 ventas · $4,837.50</p>
+                            </div>
+                            <div class="ranking-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 57%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <div class="rank-number rank-3">3</div>
+                            <div class="ranking-info">
+                                <h4>Resistores</h4>
+                                <p class="ranking-detail">312 ventas · $5,850.00</p>
+                            </div>
+                            <div class="ranking-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 52%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <div class="rank-number">4</div>
+                            <div class="ranking-info">
+                                <h4>Chips Bluetooth</h4>
+                                <p class="ranking-detail">289 ventas · $13,005.00</p>
+                            </div>
+                            <div class="ranking-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <div class="rank-number">5</div>
+                            <div class="ranking-info">
+                                <h4>Placa Arduino Due</h4>
+                                <p class="ranking-detail">201 ventas · $18,087.99</p>
+                            </div>
+                            <div class="ranking-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 32%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ranking de Hobbies -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Hobbies Más Atendidos</h2>
+                        <span class="info-badge">Top 6</span>
+                    </div>
+                    <div class="hobbies-chart">
+                        <div class="hobby-bar-item">
+                            <div class="hobby-header">
+                                <span class="hobby-icon">🎨</span>
+                                <div class="hobby-info">
+                                    <span class="hobby-name">Robotica</span>
+                                    <span class="hobby-percentage">28.5%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-large">
+                                <div class="progress-fill-large" style="width: 28.5%; background-color: #0d6efd;"></div>
+                            </div>
+                            <p class="hobby-stats">699 compras</p>
+                        </div>
+
+                        <div class="hobby-bar-item">
+                            <div class="hobby-header">
+                                <span class="hobby-icon">🧱</span>
+                                <div class="hobby-info">
+                                    <span class="hobby-name">Manitas Tecnologicas personalizadas en Casa</span>
+                                    <span class="hobby-percentage">23.1%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-large">
+                                <div class="progress-fill-large" style="width: 23.1%; background-color: #3d85fd;"></div>
+                            </div>
+                            <p class="hobby-stats">423 compras</p>
+                        </div>
+
+                        <div class="hobby-bar-item">
+                            <div class="hobby-header">
+                                <span class="hobby-icon">🍳</span>
+                                <div class="hobby-info">
+                                    <span class="hobby-name">Automatizaciones en Casa</span>
+                                    <span class="hobby-percentage">15.7%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-large">
+                                <div class="progress-fill-large" style="width: 15.7%; background-color: #6c9fff;"></div>
+                            </div>
+                            <p class="hobby-stats">289 compras</p>
+                        </div>
+
+                        <div class="hobby-bar-item">
+                            <div class="hobby-header">
+                                <span class="hobby-icon">🚴</span>
+                                <div class="hobby-info">
+                                    <span class="hobby-name">Gatgets en Actividades</span>
+                                    <span class="hobby-percentage">10.9%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-large">
+                                <div class="progress-fill-large" style="width: 10.9%; background-color: #9bb8ff;"></div>
+                            </div>
+                            <p class="hobby-stats">201 compras</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estadísticas por Ubicación -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Ventas por Ubicación</h2>
+                    <div class="header-actions">
+                        <button class="view-toggle active">Mapa</button>
+                        <button class="view-toggle">Lista</button>
+                    </div>
+                </div>
+                <div class="location-stats">
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Lima</span>
+                            </div>
+                            <span class="location-value">$28,456</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%; background-color: #0d6efd;"></div>
+                        </div>
+                        <p class="location-details">872 ventas · 35% del total</p>
+                    </div>
+
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Arequipa</span>
+                            </div>
+                            <span class="location-value">$22,134</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%; background-color: #3d85fd;"></div>
+                        </div>
+                        <p class="location-details">645 ventas · 27% del total</p>
+                    </div>
+
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Trujillo</span>
+                            </div>
+                            <span class="location-value">$15,890</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 56%; background-color: #6c9fff;"></div>
+                        </div>
+                        <p class="location-details">423 ventas · 18% del total</p>
+                    </div>
+
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Ica</span>
+                            </div>
+                            <span class="location-value">$12,345</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 43%; background-color: #9bb8ff;"></div>
+                        </div>
+                        <p class="location-details">356 ventas · 15% del total</p>
+                    </div>
+
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Otras Ubicaciones</span>
+                            </div>
+                            <span class="location-value">$4,567</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 16%; background-color: #d4e5ff;"></div>
+                        </div>
+                        <p class="location-details">124 ventas · 5% del total</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal para Agregar Producto -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Agregar Nuevo Producto</h3>
+                <button class="close-modal" onclick="closeProductModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="productForm">
+                <div class="form-group">
+                    <label class="form-label">Nombre del Producto <span class="required">*</span></label>
+                    <input type="text" class="form-input" placeholder="Ej: Pintura Acrílica Premium" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Precio ($) <span class="required">*</span></label>
+                        <input type="number" class="form-input" placeholder="0.00" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Stock Inicial <span class="required">*</span></label>
+                        <input type="number" class="form-input" placeholder="0" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-textarea" rows="3" placeholder="Descripción del producto..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">SKU / Código</label>
+                    <input type="text" class="form-input" placeholder="Ej: PINT-001">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeProductModal()">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para Agregar Tienda -->
+    <div id="storeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Agregar Nueva Tienda</h3>
+                <button class="close-modal" onclick="closeStoreModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="storeForm">
+                <div class="form-group">
+                    <label class="form-label">Nombre de la Tienda <span class="required">*</span></label>
+                    <input type="text" class="form-input" placeholder="Ej: Sucursal Centro" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Dirección Completa <span class="required">*</span></label>
+                    <input type="text" class="form-input" placeholder="Calle, número, código postal" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Ciudad <span class="required">*</span></label>
+                        <input type="text" class="form-input" placeholder="Ej: Madrid" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">País <span class="required">*</span></label>
+                        <input type="text" class="form-input" placeholder="Ej: España" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Teléfono</label>
+                    <input type="tel" class="form-input" placeholder="+34 XXX XXX XXX">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeStoreModal()">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar Tienda</button>
+                </div>
+            </form>
+        </div>
+    </div>

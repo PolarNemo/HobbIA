@@ -38,72 +38,86 @@
               <th>#</th>
               <th>Codigo</th>
               <th>Actividad</th>
-              <th>Usuarios</th>
+              <th>Descripcion</th>
               <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
+            @for (item_actividad of g_listaActividades; track $index)
+            {
+              <tr>
+                <td>{{item_actividad.id}}</td>
+                <td><b>{{item_actividad.codigo}}</b></td>
+                <td>{{item_actividad.nombre}}</td>
+                <td>{{item_actividad.descripcion}}</td>
+                <td>
+                  <button type="button" (click)="IrARealizarActividad(item_actividad.id)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                  <button type="button" (click)="IrAEditarActividad(item_actividad.id)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
+                </td>
+              </tr>
+            }
+
             <!-- Ejemplo de 20 actividades -->
             <tr><td>1</td><td><b>a0001</b></td><td>Fútbol</td><td>120</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>2</td><td><b>a0002</b></td><td>Pintura</td><td>80</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>3</td><td><b>a0003</b></td><td>Karate</td><td>60</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>4</td><td><b>f0004</b></td><td>Ciclismo</td><td>95</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>5</td><td><b>f0005</b></td><td>Natación</td><td>70</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>6</td><td><b>f0006</b></td><td>Lectura</td><td>110</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>7</td><td><b>f0007</b></td><td>Baile</td><td>85</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>8</td><td><b>f0008</b></td><td>Teatro</td><td>40</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>9</td><td><b>f0009</b></td><td>Origami</td><td>5</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>10</td><td><b>f0010</b></td><td>Yoga</td><td>30</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>11</td><td><b>f0011</b></td><td>Senderismo</td><td>55</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>12</td><td><b>f0012</b></td><td>Fotografía</td><td>45</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>13</td><td><b>f0013</b></td><td>Videojuegos</td><td>100</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>14</td><td><b>f0014</b></td><td>Escritura</td><td>65</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>15</td><td><b>f0015</b></td><td>Cocina</td><td>90</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>16</td><td><b>f0016</b></td><td>Patinaje</td><td>25</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>17</td><td><b>f0017</b></td><td>Escalada</td><td>15</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>18</td><td><b>f0018</b></td><td>Pesca</td><td>20</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>19</td><td><b>f0019</b></td><td>Artesanía</td><td>35</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
             <tr><td>20</td><td><b>f0020</b></td><td>Jardinería</td><td>50</td><td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button></td></tr>
           </tbody>
         </table>
       </div>
@@ -134,14 +148,12 @@
         <div class="progress-bar bg-primary w-100-peepo">60</div>
       </div>
     </div>
-
     <div class="mb-3">
       <span>Origami (5 usuarios)</span>
       <div class="progress">
         <div class="progress-bar bg-primary w-100-peepo">5</div>
       </div>
     </div>
-
     <div class="mb-3">
       <span>Yoga (30 usuarios)</span>
       <div class="progress">
@@ -151,9 +163,6 @@
       </div>
     </div>
   </div>
-
-
-
   <div class="row">
     <div class="col-12 mt-5">
       <span class="h3">Lista de Examenes</span>
@@ -175,8 +184,8 @@
               <td>Formulario de Actividades Fisicas</td>
               <td>2025/11/23</td>
               <td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
               </td>
             </tr>
             <tr>
@@ -184,8 +193,8 @@
               <td>Formulario de Actividades Psicologicas</td>
               <td>2025/11/23</td>
               <td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
               </td>
             </tr>
             <tr>
@@ -193,8 +202,8 @@
               <td>Formulario de Actividades Estretegicas</td>
               <td>2025/11/23</td>
               <td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
               </td>
             </tr>
             <tr>
@@ -202,13 +211,12 @@
               <td>Formulario de Pensamiento Intuitivo</td>
               <td>2025/11/23</td>
               <td>
-                <button type="button" (click)="IrARealizarActividad()" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
-                <button type="button" (click)="IrAEditarActividad()" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
+                <button type="button" (click)="IrARealizarActividad(0)" class="btn btn-info p-1 m-1">!<i class="fa fa-eye"></i></button>
+                <button type="button" (click)="IrAEditarActividad(0)" class="btn btn-warning p-1">!<i class="fa fa-pencil"></i></button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-
     </div>
   </div>

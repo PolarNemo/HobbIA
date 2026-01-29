@@ -4,11 +4,11 @@ import { ActividadService } from "../../../service/ActividadService/actividad.se
 import { Actividad } from "../../../interfaces/usuario/actividad.interface";
 
 @Component({
-	selector: "app-menuactividades",
-	templateUrl: "./menuactividades.component.html",
-	styleUrls: ["./menuactividades.component.css"]
+	selector: "app-gestionarproveedor",
+	templateUrl: "./gestionarproveedor.component.html",
+	styleUrls: ["./gestionarproveedor.component.css"]
 })
-export class MenuActividadesComponent implements OnInit {
+export class GestionarProveedorComponent implements OnInit {
 
   private readonly _actividadService = inject(ActividadService);
   private readonly _router = inject(Router);
@@ -17,7 +17,7 @@ export class MenuActividadesComponent implements OnInit {
 
 	constructor() {}
 	ngOnInit(): void {
-    console.log("Menu Actividades")
+    console.log("Gestionar Proveedor")
 	}
 
   IrARealizarActividad(actividadId : number) {

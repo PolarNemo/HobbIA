@@ -1,4 +1,5 @@
 export interface Usuario{
+    id: number;
     documentNumber:string;
     documentTypeId:number;
     documentTypeName: string;

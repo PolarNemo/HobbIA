@@ -1,4 +1,4 @@
 export const environment = {
-  pathHobbia: "http://localhost:5023/",
+  pathHobbia: "https://localhost:7116/api",
   production: false
 };

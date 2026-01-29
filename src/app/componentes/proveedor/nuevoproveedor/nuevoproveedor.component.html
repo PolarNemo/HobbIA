@@ -1,0 +1,339 @@
+ <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <h1 class="header-title">Registro de Proveedor</h1>
+            </div>
+            <p class="header-subtitle">Complete el formulario para registrar un nuevo proveedor</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <form class="registration-form" id="providerForm">
+                <!-- Información Básica -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 21h18"></path>
+                            <path d="M9 8h1"></path>
+                            <path d="M9 12h1"></path>
+                            <path d="M9 16h1"></path>
+                            <path d="M14 8h1"></path>
+                            <path d="M14 12h1"></path>
+                            <path d="M14 16h1"></path>
+                            <path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"></path>
+                        </svg>
+                        <h2 class="section-title">Información Básica</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="providerName" class="form-label">
+                                Nombre del Proveedor
+                                <span class="required">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="providerName"
+                                name="providerName"
+                                class="form-input"
+                                placeholder="Ej: Mi Tienda SAC"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="description" class="form-label">
+                                Descripción
+                                <span class="required">*</span>
+                            </label>
+                            <textarea
+                                id="description"
+                                name="description"
+                                class="form-textarea"
+                                rows="4"
+                                placeholder="Describe brevemente los servicios y productos que ofrece el proveedor..."
+                                required
+                            ></textarea>
+                            <span class="form-hint">Máximo 500 caracteres</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row two-columns">
+                        <div class="form-group">
+                            <label for="category" class="form-label">
+                                Categoría de Producto
+                                <span class="required">*</span>
+                            </label>
+                            <select id="category" name="category" class="form-select" required>
+                                <option value="">Seleccionar categoría</option>
+                                <option value="juguetes">Coleccionismo</option>
+                                <option value="electronica">Fuera De Casa</option>
+                                <option value="materiales">Manualidades</option>
+                                <option value="alimentacion">Construccion c/Fichas</option>
+                                <option value="hogar">Robotica</option>
+                                <option value="textil">Textil</option>
+                                <option value="artesania">Dibujos</option>
+                                <option value="deportes">Deportes</option>
+                                <option value="juguetes">Ciclismo</option>
+                                <option value="juguetes">Artes Marciales</option>
+                                <option value="juguetes">Cocina</option>
+                                <option value="juguetes">Animacion con Plastelina</option>
+                                <option value="juguetes">Animacion Digital</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="level" class="form-label">
+                                Nivel de Proveedor
+                                <span class="required">*</span>
+                            </label>
+                            <select id="level" name="level" class="form-select" required>
+                                <option value="">Seleccionar nivel</option>
+                                <option value="premium">Premium</option>
+                                <option value="estandar">Estándar</option>
+                                <option value="basico">Básico</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ubicación -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <h2 class="section-title">Ubicación</h2>
+                    </div>
+
+                    <div class="form-row two-columns">
+                        <div class="form-group">
+                            <label for="city" class="form-label">
+                                Nombre Coloquial
+                                <span class="required">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                class="form-input"
+                                placeholder="Ej: Mi Barrio"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country" class="form-label">
+                                Departamento
+                                <span class="required">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="country"
+                                name="country"
+                                class="form-input"
+                                placeholder="Ej: Arequipa"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="address" class="form-label">Dirección Completa</label>
+                            <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                class="form-input"
+                                placeholder="Calle, número, provincia, distrito..."
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies y Usos -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
+                            <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 22v-2"></path>
+                            <path d="m17 20.66-1-1.73"></path>
+                            <path d="M11 10.27 7 3.34"></path>
+                            <path d="m20.66 17-1.73-1"></path>
+                            <path d="m3.34 7 1.73 1"></path>
+                            <path d="M14 12h8"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="m20.66 7-1.73 1"></path>
+                            <path d="m3.34 17 1.73-1"></path>
+                            <path d="m17 3.34-1 1.73"></path>
+                            <path d="m11 13.73-4 6.93"></path>
+                        </svg>
+                        <h2 class="section-title">Hobbies y Usos de los Productos</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label class="form-label">
+                                ¿Para qué hobbies o actividades son útiles estos productos?
+                                <span class="required">*</span>
+                            </label>
+                            <p class="form-hint-top">Ingrese los hobbies o actividades y presione Enter o el botón "+" para agregar</p>
+
+                            <div class="tag-input-container">
+                                <input
+                                    type="text"
+                                    id="hobbyInput"
+                                    class="form-input tag-input"
+                                    placeholder="Ej: Construcción con LEGO, Pintura, Dibujo artístico..."
+                                >
+                                <button type="button" class="add-tag-btn" id="addHobbyBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="tags-container" id="hobbiesContainer">
+                                <!-- Tags will be added here dynamically -->
+                            </div>
+
+                            <div class="examples-box">
+                                <p class="examples-title">Ejemplos de hobbies:</p>
+                                <div class="example-tags">
+                                    <span class="example-tag" data-hobby="Construcción con LEGO">Construcción con LEGO</span>
+                                    <span class="example-tag" data-hobby="Pintura al óleo">Pintura al óleo</span>
+                                    <span class="example-tag" data-hobby="Dibujo artístico">Dibujo artístico</span>
+                                    <span class="example-tag" data-hobby="Manualidades">Manualidades</span>
+                                    <span class="example-tag" data-hobby="Scrapbooking">Coleccionismo</span>
+                                    <span class="example-tag" data-hobby="Modelismo">cocina</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productos Principales -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                            <path d="M12 22V12"></path>
+                        </svg>
+                        <h2 class="section-title">Productos Principales</h2>
+                    </div>
+
+                    <div id="productsContainer">
+                        <!-- Product 1 (default) -->
+                        <div class="product-item" data-product-index="0">
+                            <div class="product-header">
+                                <h3 class="product-title">Producto #1</h3>
+                            </div>
+
+                            <div class="form-row two-columns">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        Nombre del Producto
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="productName[]"
+                                        class="form-input"
+                                        placeholder="Ej: Fichas de LEGO Classic"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        Precio (€)
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input
+                                        type="number"
+                                        name="productPrice[]"
+                                        class="form-input"
+                                        placeholder="0.00"
+                                        step="0.01"
+                                        min="0"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group full-width">
+                                    <label class="form-label">Descripción del Producto</label>
+                                    <textarea
+                                        name="productDescription[]"
+                                        class="form-textarea"
+                                        rows="2"
+                                        placeholder="Breve descripción del producto..."
+                                    ></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row two-columns">
+                                <div class="form-group">
+                                    <label class="form-label">Stock Disponible</label>
+                                    <input
+                                        type="number"
+                                        name="productStock[]"
+                                        class="form-input"
+                                        placeholder="0"
+                                        min="0"
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">En que te Diferencias</label>
+                                    <input
+                                        type="text"
+                                        name="productSku[]"
+                                        class="form-input"
+                                        placeholder="Ej: Barato"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="add-product-btn" id="addProductBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Agregar Otro Producto
+                    </button>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary">
+                        Cancelar
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Registrar Proveedor
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>

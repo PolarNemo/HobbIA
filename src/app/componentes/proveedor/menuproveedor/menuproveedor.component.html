@@ -1,0 +1,665 @@
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21h18"></path>
+                    <path d="M9 8h1"></path>
+                    <path d="M9 12h1"></path>
+                    <path d="M9 16h1"></path>
+                    <path d="M14 8h1"></path>
+                    <path d="M14 12h1"></path>
+                    <path d="M14 16h1"></path>
+                    <path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"></path>
+                </svg>
+                <h1 class="header-title">Landing Proveedores</h1>
+            </div>
+            <p class="header-subtitle">Gestión y análisis de proveedores y productos</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-content">
+                        <div class="stat-info">
+                            <p class="stat-label">Total Proveedores</p>
+                            <p class="stat-value">8</p>
+                        </div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-content">
+                        <div class="stat-info">
+                            <p class="stat-label">Total Productos</p>
+                            <p class="stat-value">1007</p>
+                        </div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                <path d="M12 22V12"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-content">
+                        <div class="stat-info">
+                            <p class="stat-label">Categorías Activas</p>
+                            <p class="stat-value">6</p>
+                        </div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-content">
+                        <div class="stat-info">
+                            <p class="stat-label">Proveedores Premium</p>
+                            <p class="stat-value">3</p>
+                        </div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18"></path>
+                                <path d="M9 8h1"></path>
+                                <path d="M9 12h1"></path>
+                                <path d="M9 16h1"></path>
+                                <path d="M14 8h1"></path>
+                                <path d="M14 12h1"></path>
+                                <path d="M14 16h1"></path>
+                                <path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid">
+                <!-- Membership Chart -->
+                <div class="chart-card">
+                    <h3 class="chart-title">Proveedores por Nivel de Membresía</h3>
+                    <div class="chart-content">
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path>
+                                        <path d="M5 21h14"></path>
+                                    </svg>
+                                    <span>Premium</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #0d6efd;">5 k (23%)</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 23%; background-color: #0d6efd;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c9fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <span>Estándar</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #6c9fff;">11 k (50%)</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 38%; background-color: #6c9fff;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg>
+                                    <span>Básico</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #b8d4ff;">6 k (27%)</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%; background-color: #b8d4ff;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Chart -->
+                <div class="chart-card">
+                    <h3 class="chart-title">Proveedores por Categoría</h3>
+                    <div class="chart-content">
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Fuera de Casa</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #0d6efd;"># proveedores</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%; background-color: #0d6efd;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Manualidades</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #3d85fd;"># proveedores</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%; background-color: #3d85fd;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Construccion con fichas y piezas</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #6c9fff;"># proveedor</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%; background-color: #6c9fff;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Robotica</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #9bb8ff;"># proveedor</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 42%; background-color: #9bb8ff;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Textil</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #b8d4ff;"># proveedor</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 62%; background-color: #b8d4ff;"></div>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="chart-item-header">
+                                <div class="chart-item-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                    </svg>
+                                    <span>Dibujo</span>
+                                </div>
+                                <span class="chart-item-value" style="color: #d4e5ff;"># proveedor</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 82%; background-color: #d4e5ff;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Providers Table -->
+            <div class="table-container">
+                <div class="table-header">
+                    <h2 class="table-title">Directorio de Proveedores</h2>
+                    <p class="table-subtitle">Información detallada de todos los proveedores registrados</p>
+                </div>
+                <div class="table-wrapper">
+                    <table class="providers-table">
+                        <thead>
+                            <tr>
+                                <th>Proveedor</th>
+                                <th>Ubicación</th>
+                                <th>Nivel</th>
+                                <th>Especialidad</th>
+                                <th>Productos</th>
+                                <th>Fecha de Registro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(13, 110, 253, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>SuministrosTechies SA</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Abancay, Lima</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(13, 110, 253, 0.08); color: #0d6efd;">Premium</span>
+                                </td>
+                                <td>Electrónica</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">245</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>15 de marzo de 2022</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(108, 159, 255, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c9fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>Tienda Luchita y Pinceles</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Plaza Central, Trujillo</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(108, 159, 255, 0.08); color: #6c9fff;">Estándar</span>
+                                </td>
+                                <td>Materiales</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">89</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>20 de enero de 2023</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(184, 212, 255, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>Picky SA</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Jesus Maria, Lima</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(184, 212, 255, 0.08); color: #b8d4ff;">Básico</span>
+                                </td>
+                                <td>Colores y Pinturas</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">67</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>10 de junio de 2023</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(13, 110, 253, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>TayLoy</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Jesus Maria, Lima</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(13, 110, 253, 0.08); color: #0d6efd;">Premium</span>
+                                </td>
+                                <td>Variados</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">203</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>5 de agosto de 2022</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(108, 159, 255, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c9fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>El Cueraso</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Plaza Central, Trujillo</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(108, 159, 255, 0.08); color: #6c9fff;">Estándar</span>
+                                </td>
+                                <td>Telas y Cueros</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">124</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>14 de febrero de 2023</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(13, 110, 253, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>Fashion Wholesale</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Miraflores, Lima</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(13, 110, 253, 0.08); color: #0d6efd;">Premium</span>
+                                </td>
+                                <td>Textil</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">178</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>22 de noviembre de 2022</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(184, 212, 255, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>Digital Solutions</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Miraflores, Lima</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(184, 212, 255, 0.08); color: #b8d4ff;">Básico</span>
+                                </td>
+                                <td>Electrónica</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">45</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>1 de septiembre de 2023</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="provider-name">
+                                        <div class="provider-icon" style="background-color: rgba(108, 159, 255, 0.08);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c9fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                            </svg>
+                                        </div>
+                                        <span>BiciWorld TuBici</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <span>Grau, Lima</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="level-badge" style="background-color: rgba(108, 159, 255, 0.08); color: #6c9fff;">Estándar</span>
+                                </td>
+                                <td>Ciclismo</td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                            <path d="M12 22V12"></path>
+                                        </svg>
+                                        <span style="color: #0d6efd;">156</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell-with-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>18 de abril de 2023</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 Portal de Proveedores. Todos los derechos reservados.</p>
+        </div>
+    </footer>

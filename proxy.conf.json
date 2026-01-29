@@ -1,0 +1,7 @@
+{
+  "/apiHobbia": {
+    "target": "https://localhost:7116/api",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
